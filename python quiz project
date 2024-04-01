@@ -1,0 +1,76 @@
+def run_quiz():
+    questions = [
+        "What is the capital of France?",
+        "Who wrote 'Romeo and Juliet'?",
+        "What is the chemical symbol for water?",
+        "Which planet is known as the Red Planet?",
+        "What is the tallest mammal in the world?"
+    ]
+
+    options = [
+        ["A. London", "B. Paris", "C. Rome", "D. Madrid"],
+        ["A. William Shakespeare", "B. Jane Austen", "C. Charles Dickens", "D. J.K. Rowling"],
+        ["A. Wa", "B. Wo", "C. H2O", "D. Wt"],
+        ["A. Jupiter", "B. Mars", "C. Saturn", "D. Venus"],
+        ["A. Elephant", "B. Giraffe", "C. Hippopotamus", "D. Rhinoceros"]
+    ]
+
+    answers = ["B", "A", "C", "B", "B"]
+    score = 0
+
+    for i in range(len(questions)):
+        print("\n" + questions[i])
+        for option in options[i]:
+            print(option)
+        answer = input("Enter your answer (A/B/C/D): ").upper()
+        if answer == answers[i]:
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect!")
+            print("Correct answer is:", answers[i])
+
+    print("\nQuiz Complete!")
+    print("Your Score:", score, "/", len(questions))
+
+
+if _name_ == "_main_":
+    run_quiz()
+def run_quiz():
+    questions = [
+        "What is the capital of France?",
+        "Who wrote 'Romeo and Juliet'?",
+        "What is the chemical symbol for water?",
+        "Which planet is known as the Red Planet?",
+        "What is the tallest mammal in the world?"
+    ]
+
+    options = [
+        ["A. London", "B. Paris", "C. Rome", "D. Madrid"],
+        ["A. William Shakespeare", "B. Jane Austen", "C. Charles Dickens", "D. J.K. Rowling"],
+        ["A. Wa", "B. Wo", "C. H2O", "D. Wt"],
+        ["A. Jupiter", "B. Mars", "C. Saturn", "D. Venus"],
+        ["A. Elephant", "B. Giraffe", "C. Hippopotamus", "D. Rhinoceros"]
+    ]
+
+    answers = ["B", "A", "C", "B", "B"]
+    score = 0
+
+    for i in range(len(questions)):
+        print("\n" + questions[i])
+        for option in options[i]:
+            print(option)
+        answer = input("Enter your answer (A/B/C/D): ").upper()
+        if answer == answers[i]:
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect!")
+            print("Correct answer is:", answers[i])
+
+    print("\nQuiz Complete!")
+    print("Your Score:", score, "/", len(questions))
+
+
+if _name_ == "_main_":
+    run_quiz()
